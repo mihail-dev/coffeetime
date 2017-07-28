@@ -16,3 +16,4 @@
     object: index.html
     src: "{{playbook_dir}}/roles/s3/files/index.html"
     mode: put
+    permission: public-read
