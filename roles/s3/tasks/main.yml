@@ -1,5 +1,11 @@
 ---
 
 # Create a simple s3 bucket
-- s3_bucket:
-    name: coffee-time-prod
+- name: Create s3 bucket
+  s3_bucket: 
+    name: cr-coffee-time-prod
+
+- name: Enable s3 website hosting
+  s3_website:
+    name: cr-coffee-time-prod
+    state: present
