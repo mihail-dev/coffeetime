@@ -1,0 +1,5 @@
+---
+
+# Create a simple s3 bucket
+- s3_bucket:
+    name: coffee-time-prod

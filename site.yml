@@ -1,0 +1,6 @@
+---
+
+- name: provison s3
+  hosts: localhost
+  roles:
+    - s3
