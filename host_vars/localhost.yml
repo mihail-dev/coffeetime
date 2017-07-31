@@ -1,3 +1,5 @@
 ---
 
 s3_bucket_name: cr-coffee-time-prod
+dynamodb_table_name: cr-coffee-time-prod
+aws_region: eu-west-1

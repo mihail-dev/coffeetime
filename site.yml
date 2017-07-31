@@ -4,6 +4,7 @@
   hosts: localhost
   roles:
     - s3
+    - dynamo_db
     - serverless
   environment:
     service: coffeetime
