@@ -1,6 +1,5 @@
 ---
 
-# Create a simple s3 bucket
 - name: Create s3 bucket
   s3_bucket: 
     name: cr-coffee-time-prod
@@ -10,6 +9,7 @@
     name: cr-coffee-time-prod
     state: present
 
+# TODO: idempotent
 - name: put index.html
   s3:
     bucket: cr-coffee-time-prod

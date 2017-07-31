@@ -1,0 +1,6 @@
+---
+
+- name: deploy api gateway and lambda functions
+  serverless:
+    service_path: "{{playbook_dir}}/roles/serverless/serverless_framework"
+    region: eu-west-1
