@@ -2,17 +2,17 @@
 
 - name: Create s3 bucket
   s3_bucket: 
-    name: cr-coffee-time-prod
+    name: "{{ s3_bucket_name }}"
 
 - name: Enable s3 website hosting
   s3_website:
-    name: cr-coffee-time-prod
+    name: "{{ s3_bucket_name }}"
     state: present
 
 # TODO: idempotent
 - name: put index.html
   s3:
-    bucket: cr-coffee-time-prod
+    bucket: "{{ s3_bucket_name }}"
     object: index.html
     src: "{{playbook_dir}}/roles/s3/files/index.html"
     mode: put
