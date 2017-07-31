@@ -8,3 +8,4 @@
     - serverless
   environment:
     service: coffeetime
+    region: "{{ aws_region }}"
