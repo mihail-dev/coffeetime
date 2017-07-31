@@ -1,22 +1,16 @@
-import json
+import json, boto3
 
 def hello(event, context):
     body = {
         "message": "Go Serverless v1.0! Your function executed successfully!",
         "input": event
     }
+    sns = boto3.client('sns')
+    number = '+447123456789'
+    sns_response = sns.publish(PhoneNumber = number, Message='example text message' )
 
     response = {
-        "statusCode": 200,
-        "body": json.dumps(body)
+        "statusCode": 200
     }
 
     return response
-
-    # Use this code if you don't use the http event with the LAMBDA-PROXY integration
-    """
-    return {
-        "message": "Go Serverless v1.0! Your function executed successfully!",
-        "event": event
-    }
-    """

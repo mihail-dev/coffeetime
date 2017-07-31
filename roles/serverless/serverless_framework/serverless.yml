@@ -28,6 +28,7 @@ provider:
         - "s3:*"
         - "logs:*"
         - "dynamodb:*"
+        - "sns:*"
       Resource: "*"
 
 # you can define service wide environment variables here
