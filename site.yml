@@ -5,3 +5,5 @@
   roles:
     - s3
     - serverless
+  environment:
+    service: coffeetime
